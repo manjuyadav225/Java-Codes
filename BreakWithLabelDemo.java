@@ -10,7 +10,7 @@ public class BreakWithLabelDemo {
 		int i=0,j=0;
 		boolean foundIt = false;
 		
-		//search:
+		     search:
 			for(i=0; i<arrayOfInts.length; i++)
 			{
 				for(j=0; j<arrayOfInts[i].length; j++)
@@ -20,8 +20,8 @@ public class BreakWithLabelDemo {
 						{
 						foundIt = true;
 						//System.out.println(arrayOfInts[i][j]);
-						break;
-					    //break search;
+						//break;
+					         break search;
 						}
 				}
 			}
