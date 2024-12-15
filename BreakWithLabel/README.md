@@ -96,19 +96,20 @@ To correctly break out of both loops and print the correct coordinates, you can 
 **Updated Code with Labeled Break**:
 
 search:
-   for(i=0; i<arrayOfInts.length; i++) {			
-    for(j=0; j<arrayOfInts[i].length; j++) {			
+
+   for(i=0; i<arrayOfInts.length; i++) {
+   
+    for(j=0; j<arrayOfInts[i].length; j++) {
+    
     	if(arrayOfInts[i][j] == searchFor){
 						
-      
+           foundIt = true;
+						   
+	   break search;
 						
-      foundIt = true;
-			  				   
-	 break search;
-						
-      }
+      }} }
                 
-} }
+
 
 With this change, the program will break out of both loops, and the output will correctly print:
 Found 12 at 2,0
