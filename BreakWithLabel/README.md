@@ -39,6 +39,7 @@ public class BreakWithLabelDemo {
 _Output : Found 12 at 3,0_
 
 **Code Explanation**
+
 Array Initialization:
 The program defines a 2D array arrayOfInts:
 int[][] arrayOfInts = {
@@ -58,7 +59,7 @@ The program sets up a value 12 to search for in the array:
 int searchFor = 12;
 The variables i and j track the indices of the row and column. The foundIt flag is used to check whether the target value has been found.
 
-**_Loop to Search the Array:_**
+_Loop to Search the Array:_
 The program uses two nested for loops to iterate over the rows and columns:
 for(i = 0; i < arrayOfInts.length; i++) {
     for(j = 0; j < arrayOfInts[i].length; j++) {
@@ -71,7 +72,8 @@ for(i = 0; i < arrayOfInts.length; i++) {
 Outer loop: Iterates through the rows (i runs from 0 to 2).
 Inner loop: Iterates through the columns (j runs from 0 to 3).
 If the value 12 is found, the flag foundIt is set to true, and the program breaks out of the inner loop. However, the outer loop continues running.
-Output:
+
+_Output:_
 After both loops finish, the program checks if the value was found:
 if (foundIt)
     System.out.println("Found " + searchFor + " at " + i + "," + j);
@@ -84,6 +86,7 @@ When the inner loop finds 12, it sets foundIt = true and breaks out of the inner
 By the time the outer loop finishes, i has the value 3 (since it completes all three iterations) and j is 0 (because the 12 was found in the first column).
 Thus, the program will print:
        **Found 12 at 3,0**
+
 Issue:
 The output incorrectly reports "Found 12 at 3,0" instead of the correct coordinates "2,0".
 This happens because the break statement only exits the inner loop, but not the outer loop.
@@ -103,6 +106,7 @@ search:
         }
     }
 }
+
 With this change, the program will break out of both loops, and the output will correctly print:
 Found 12 at 2,0
 
