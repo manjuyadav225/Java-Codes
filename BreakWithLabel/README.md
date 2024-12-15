@@ -57,7 +57,7 @@ The program sets up a value 12 to search for in the array:
 int searchFor = 12;
 The variables i and j track the indices of the row and column. The foundIt flag is used to check whether the target value has been found.
 
-Loop to Search the Array:
+_Loop to Search the Array:_
 The program uses two nested for loops to iterate over the rows and columns:
 for(i = 0; i < arrayOfInts.length; i++) {
     for(j = 0; j < arrayOfInts[i].length; j++) {
@@ -77,7 +77,7 @@ if (foundIt)
 else
     System.out.println(searchFor + " not in the array");
 
-Output Explanation
+_**Output Explanation**_
 The target value 12 is located at arrayOfInts[2][0] (third row, first column).
 When the inner loop finds 12, it sets foundIt = true and breaks out of the inner loop. The outer loop, however, continues running.
 By the time the outer loop finishes, i has the value 3 (since it completes all three iterations) and j is 0 (because the 12 was found in the first column).
@@ -105,9 +105,9 @@ search:
 With this change, the program will break out of both loops, and the output will correctly print:
 Found 12 at 2,0
 
-**Conclusion**
+_**Conclusion**_
 This program demonstrates the use of nested loops to search for a value in a 2D array. However, the way the loops are structured can lead to incorrect output due to the behavior of the break statement. A labeled break can resolve this issue and produce the correct result.
 
-**referece** : https://docs.oracle.com/javase/tutorial/java/nutsandbolts/branch.html
+_**referece**_ : https://docs.oracle.com/javase/tutorial/java/nutsandbolts/branch.html
 
 
