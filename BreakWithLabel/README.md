@@ -52,12 +52,13 @@ arrayOfInts = {
     {4, 8, 16, 32},
     {12, 24, 48, 96}
 }
+
 Search Setup:
 The program sets up a value 12 to search for in the array:
 int searchFor = 12;
 The variables i and j track the indices of the row and column. The foundIt flag is used to check whether the target value has been found.
 
-_Loop to Search the Array:_
+**_Loop to Search the Array:_**
 The program uses two nested for loops to iterate over the rows and columns:
 for(i = 0; i < arrayOfInts.length; i++) {
     for(j = 0; j < arrayOfInts[i].length; j++) {
