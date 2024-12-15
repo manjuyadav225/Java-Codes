@@ -94,6 +94,7 @@ Suggested Fix:
 To correctly break out of both loops and print the correct coordinates, you can use a labeled break statement:
 
 **Updated Code with Labeled Break**:
+
 search: 
   for (i = 0; i < arrayOfInts.length; i++) 
   {
